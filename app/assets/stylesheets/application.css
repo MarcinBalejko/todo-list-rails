@@ -36,6 +36,12 @@
      font-size: 52px;
  }
 
+ ol li {
+     margin-left: 20px;
+    font-size: x-large;
+    font-family: 'Cabin Sketch', cursive;
+ }
+
  .btn {
     font-family: 'Cabin Sketch', cursive;
     background: rgb(172, 95, 95);
