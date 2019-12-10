@@ -55,7 +55,12 @@
     background: rgb(131, 64, 64);
     border: solid rgb(196, 190, 190);
     color: rgb(231, 227, 227);
-  }
+}
+
+.new-item-btn {
+    margin-bottom: 5px;
+}
+
 
 .pencil {
     color: black;
