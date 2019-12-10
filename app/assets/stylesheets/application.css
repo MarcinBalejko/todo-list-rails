@@ -13,20 +13,28 @@
  *= require_tree .
  *= require_self
  */
- body {
-     
- }
 
- #list-container {
-    
+
+ #list-container { 
     padding-bottom: 8%;
-    
-    margin-left: 20%;
-    margin-right: 20%;
-    background: no-repeat;
+    background: stretch; 
     background-image: linear-gradient(rgba(0, 0, 0, 0.2),rgba(0, 0, 0, 0.2)
       ), url("https://static4.depositphotos.com/1000833/428/i/950/depositphotos_4285756-stock-photo-blank-checked-paper.jpg");
  }
+
+ @media(min-width: 1100px) {
+    #list-container {
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+}
+
+@media(min-width: 990px) {
+    #list-container {
+        margin-left: 20%;
+        margin-right: 20%;
+    }
+}
 
  #list-items-container {
      margin-top: 15%;
@@ -58,7 +66,7 @@
 }
 
 .new-item-btn {
-    margin-bottom: 5px;
+    margin-bottom: 8px;
 }
 
 
