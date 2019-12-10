@@ -6,18 +6,20 @@
     <%= csp_meta_tag %>
     <script src="https://code.iconify.design/1/1.0.3/iconify.min.js"></script>
     <script src="https://kit.fontawesome.com/25c2fb81be.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://bootswatch.com/4/sketchy/bootstrap.min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
       integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous" />
-    <link rel="stylesheet" href="https://bootswatch.com/4/sketchy/bootstrap.min.css">
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
-  <body>
-
-    <%= render 'layouts/alerts' %>
-    <%= yield %>
-    
+  <body style="text-align:center">
+  <div class="container">
+    <div class="col-lg-1-12">
+ 
+      <%= yield %>
+    </div>
+  </div>
   </body>
-
 </html>
+
