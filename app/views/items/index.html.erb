@@ -1,14 +1,29 @@
-<h1>All Todos</h1>
 
-<% @items.each do |item| %>
-  <% if item.user == current_user %>
-    <h3><%= item.item %>
-    <%= link_to '<i class="fa fa-pencil" aria-hidden="true"></i>'.html_safe, edit_item_path(item) %>
-    <%= link_to '<i class="fa fa-check" aria-hidden="true"></i>'.html_safe, item, method: :delete, data: { confirm: 'Are you sure you want to remove it from the list?' } %> </h3>
+
+<div id="list-container">
+<div id="list-items-container">
+<br>
+<br>
+  <h1 id="todo-header">All Todos</h1>
+  <% @items.each do |item| %>
+    <% if item.user == current_user %>
+      <h3><%= item.item %>
+      <%= link_to '<i class="pencil fa fa-pencil" aria-hidden="true"></i>'.html_safe, edit_item_path(item) %>
+      <%= link_to '<i class="checkmark fa fa-check" aria-hidden="true" ></i>'.html_safe, item, method: :delete, data: { confirm: 'Are you sure you want to remove it from the list?' } %>
+      </h3>
+    <% end %>
   <% end %>
-<% end %>
-<br>
+  <br>
 
-<%= link_to 'New Item', new_item_path %>
-<br>
-<%= link_to 'Sign out', destroy_user_session_path, method: :delete, data: { confirm: 'You\'re about to sign out'} %>
+  <a>
+  <%= link_to 'New Item', new_item_path, class: 'btn btn-md btn-dark' %>
+  </a>
+
+  <br>
+  <br>
+
+  <a>
+  <%= link_to 'Sign out', destroy_user_session_path, class: 'btn btn-md btn-dark',  method: :delete, data: { confirm: 'You\'re about to sign out'} %>
+  </a>
+  </div>
+</div>
