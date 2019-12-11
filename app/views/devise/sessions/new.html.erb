@@ -6,15 +6,15 @@
     <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
       <div class="field">
         <p> Email </p>
-        <%= f.email_field :email, autofocus: true, autocomplete: "email", style: 'background: #f5f5f5; opacity:0.7; filter:alpha(opacity=70);"
-         border-radius: 7px; font-family: Cabin Sketch, cursive; text-align: center' %>
+        <%= f.email_field :email, autofocus: true, autocomplete: "email", style: 'background: #f5f5f5; opacity:0.7; filter:alpha(opacity=70);
+          font-family: Cabin Sketch, cursive; text-align: center; border: solid black;' %>
       </div>
 
       <div class="field">
         <p>Password</p>
         <%= f.password_field :password, autocomplete: "current-password", 
         style: 'background: #f5f5f5; opacity:0.7; filter:alpha(opacity=70);"
-         border-radius: 10px; font-family: Cabin Sketch, cursive; text-align: center' %>
+         border-radius: 10px; font-family: Cabin Sketch, cursive; text-align: center; border: solid black;' %>
       </div>
 
       <% if devise_mapping.rememberable? %>
