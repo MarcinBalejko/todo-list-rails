@@ -19,11 +19,13 @@
     <br>
 
     <a>
-    <%= link_to 'New Item', new_item_path, class: 'new-item-btn btn btn-md btn-dark' %>
+      <%= link_to 'New Item', new_item_path, class: 'new-item-btn btn btn-md btn-dark' %>
     </a>
+    
     <br>
+
     <a>
-    <%= link_to 'Sign out', destroy_user_session_path, class: 'sign-out-btn btn btn-md btn-dark',  method: :delete, data: { confirm: 'You\'re about to sign out'} %>
+      <%= link_to 'Sign out', destroy_user_session_path, class: 'sign-out-btn btn btn-md btn-dark',  method: :delete, data: { confirm: 'You\'re about to sign out'} %>
     </a>
     
     </div>
