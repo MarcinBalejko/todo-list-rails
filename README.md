@@ -26,3 +26,11 @@ Tools and technologies used:
 |Each item can be edited or removed| ![signin](app/assets/images/todo7.png)|
 
 -----
+
+**Heroku**
+-------------------------------
+This app has been deployed to Heroku:
+
+https://github.com/MarcinBalejko/todo-list-rails
+
+-------
