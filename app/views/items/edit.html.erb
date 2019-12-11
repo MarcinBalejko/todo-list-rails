@@ -1,6 +1,7 @@
-<h1>Editing Item</h1>
 
+<div id='forms-container'>
+<h1 id="edit-item-header">Editing Item</h1>
+<br>
 <%= render 'form', item: @item %>
 
-<%= link_to 'Show', @item %> |
-<%= link_to 'Back', items_path %>
+<%= link_to 'Back', items_path, class: 'sign-out-btn btn btn-md btn-dark' %>
