@@ -1,5 +1,7 @@
-<h1>New Item</h1>
+<div id="new-item-container">
+    <h1 id="new-item-header">Next Item</h1>
 
-<%= render 'form', item: @item %>
+    <%= render 'form', item: @item %>
 
-<%= link_to 'Back', items_path %>
+    <%= link_to 'Back', items_path, class: 'new-item-btn btn btn-md btn-dark' %>
+</div>

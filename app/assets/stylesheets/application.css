@@ -1,5 +1,7 @@
+*:focus {outline:none !important}
 
  #list-container { 
+    
     padding-bottom: 8%;
     background: stretch; 
     background-image: linear-gradient(rgba(0, 0, 0, 0.2),rgba(0, 0, 0, 0.2)
@@ -29,7 +31,7 @@
  }
 
  ol li {
-     margin-left: 20px;
+    margin-left: 20px;
     font-size: x-large;
     font-family: 'Cabin Sketch', cursive;
  }
@@ -102,4 +104,21 @@ p {
 
 .login-btn {
     width:82px;
+}
+
+#new-item-container {
+    margin-top: 15%;
+}
+
+#new-item-header {
+    color: #f5f5f5 ;
+    font-size: 52px;
+}
+
+input:focus {
+    outline:none;
+}
+
+#next-item-form {
+    outline:none;
 }
