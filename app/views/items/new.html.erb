@@ -9,18 +9,13 @@
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
-
   <body>
 
-
-
-
-<div id="new-item-container">
-    <h1 id="new-item-header">Next Item</h1>
-    <br>
-    <%= render 'form', item: @item %>
-
-    <%= link_to 'Back', items_path, class: 'new-item-btn btn btn-md btn-dark' %>
-</div>
+    <div id="new-item-container">
+        <h1 id="new-item-header">Next Item</h1>
+        <br>
+        <%= render 'form', item: @item %>
+        <%= link_to 'Back', items_path, class: 'new-item-btn btn btn-md btn-dark' %>
+    </div>
 
 </body>
