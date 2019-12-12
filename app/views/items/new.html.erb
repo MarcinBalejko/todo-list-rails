@@ -1,3 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>RailsWiki</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+    <link rel="stylesheet" href="https://bootswatch.com/4/flatly/bootstrap.min.css">  
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+
+
+
+
 <div id="new-item-container">
     <h1 id="new-item-header">Next Item</h1>
     <br>
@@ -5,3 +22,5 @@
 
     <%= link_to 'Back', items_path, class: 'new-item-btn btn btn-md btn-dark' %>
 </div>
+
+</body>
