@@ -1,9 +1,7 @@
 To-do List
 =================
-A to-do list application created in Ruby on Rails. Users can create an account,
-sign in and add items to their own to-do list.
-The items on the list can be easily removed and modified.
-This application uses database as well as user authentication system.
+A to-do list application created in Ruby on Rails. It was made with Ruby on Rails, HTML, CSS and PostgreSQL technologies. It also uses Devise as a tool for creating a user authentication system.
+Users can create an account, sign in and add items to their own to-do list. The items on the list can be easily removed and modified.
 
 Tools and technologies used:
 
